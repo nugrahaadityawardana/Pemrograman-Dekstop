@@ -1,0 +1,12 @@
+D:\VB.NET\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe.config
+D:\VB.NET\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.btn_Bagi.resources
+D:\VB.NET\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Resources.resources
+D:\VB.NET\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+D:\VB.NET\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\VB.NET\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+D:\VB.NET\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+D:\VB.NET\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.exe
+D:\VB.NET\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.xml
+D:\VB.NET\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.pdb
+D:\VB.NET\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form2.resources
+D:\VB.NET\WindowsApplication1\WindowsApplication1\obj\Debug\WindowsApplication1.Form3.resources
