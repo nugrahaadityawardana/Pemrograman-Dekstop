@@ -11,14 +11,37 @@
         ElseIf RBtn_Perempuan.Checked Then
             kelamin = "Perempuan"
         End If
-        MessageBox.Show("Hai: " + nama + vbCrLf + "NIP: " + nip + vbCrLf + "Fakultas: " + fakultas + vbCrLf + "Jurusan: " + jurusan + vbCrLf + "Jenis Kelamin: " + kelamin, "Informasi: ", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        Dim tugas As Double = 0
+        Dim uts As Double = 0
+        Dim uas As Double = 0
+        Dim nilaiAkhir As Double
+        Dim grade As String = " "
+
+
+        If Double.TryParse(TxtTugas.Text, tugas) AndAlso Double.TryParse(TxtUTS.Text, uts) AndAlso Double.TryParse(TxtUAS.Text, uas) Then
+        End If
+
+        nilaiAkhir = (tugas * 0.3) + (uts * 0.3) + (uas * 0.4)
+
+
+        If nilaiAkhir >= 78 Then
+            grade = "A"
+        ElseIf nilaiAkhir >= 65 Then
+            grade = "B"
+        ElseIf nilaiAkhir >= 50 Then
+            grade = "C"
+        ElseIf nilaiAkhir >= 40 Then
+            grade = "D"
+        Else
+            grade = "E"
+        End If
+
+
+        If MessageBox.Show("Hai: " + nama + vbCrLf + "NIP: " + nip + vbCrLf + "Fakultas: " + fakultas + vbCrLf + "Jurusan: " + jurusan + vbCrLf + "Jenis Kelamin: " + kelamin + vbCrLf + "Nilai Akhir: " + nilaiAkhir.ToString("0.00") + vbCrLf + "Grade: " + grade, "Informasi: ", MessageBoxButtons.OK, MessageBoxIcon.Information) Then
+        Else : MessageBox.Show("Harap masukkan nilai yang valid!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
-    Private Sub RBtn_Laki_CheckedChanged(sender As Object, e As EventArgs) Handles RBtn_Laki.CheckedChanged
-      
-    End Sub
-
-    Private Sub RBtn_Perempuan_CheckedChanged(sender As Object, e As EventArgs) Handles RBtn_Perempuan.CheckedChanged
-       
-    End Sub
+  
 End Class

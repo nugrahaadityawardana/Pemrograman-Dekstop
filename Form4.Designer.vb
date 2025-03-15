@@ -33,6 +33,14 @@ Partial Class Form4
         Me.CmbBoxFakultas = New System.Windows.Forms.ComboBox()
         Me.CmmbBoxJurusan = New System.Windows.Forms.ComboBox()
         Me.Btnprocess = New System.Windows.Forms.Button()
+        Me.LblNilai = New System.Windows.Forms.Label()
+        Me.TxtTugas = New System.Windows.Forms.TextBox()
+        Me.LblTugas = New System.Windows.Forms.Label()
+        Me.LblUAS = New System.Windows.Forms.Label()
+        Me.LblUTS = New System.Windows.Forms.Label()
+        Me.TxtUAS = New System.Windows.Forms.TextBox()
+        Me.TxtUTS = New System.Windows.Forms.TextBox()
+        Me.TxtGRADE = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'LblNIP
@@ -140,18 +148,99 @@ Partial Class Form4
         'Btnprocess
         '
         Me.Btnprocess.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btnprocess.Location = New System.Drawing.Point(208, 392)
+        Me.Btnprocess.Location = New System.Drawing.Point(6, 457)
         Me.Btnprocess.Name = "Btnprocess"
         Me.Btnprocess.Size = New System.Drawing.Size(138, 36)
         Me.Btnprocess.TabIndex = 16
         Me.Btnprocess.Text = "Process"
         Me.Btnprocess.UseVisualStyleBackColor = True
         '
+        'LblNilai
+        '
+        Me.LblNilai.AutoSize = True
+        Me.LblNilai.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblNilai.Location = New System.Drawing.Point(45, 388)
+        Me.LblNilai.Name = "LblNilai"
+        Me.LblNilai.Size = New System.Drawing.Size(54, 25)
+        Me.LblNilai.TabIndex = 17
+        Me.LblNilai.Text = "Nilai"
+        '
+        'TxtTugas
+        '
+        Me.TxtTugas.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTugas.Location = New System.Drawing.Point(211, 379)
+        Me.TxtTugas.Name = "TxtTugas"
+        Me.TxtTugas.Size = New System.Drawing.Size(118, 34)
+        Me.TxtTugas.TabIndex = 18
+        '
+        'LblTugas
+        '
+        Me.LblTugas.AutoSize = True
+        Me.LblTugas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTugas.Location = New System.Drawing.Point(132, 385)
+        Me.LblTugas.Name = "LblTugas"
+        Me.LblTugas.Size = New System.Drawing.Size(73, 25)
+        Me.LblTugas.TabIndex = 19
+        Me.LblTugas.Text = "Tugas"
+        '
+        'LblUAS
+        '
+        Me.LblUAS.AutoSize = True
+        Me.LblUAS.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblUAS.Location = New System.Drawing.Point(576, 385)
+        Me.LblUAS.Name = "LblUAS"
+        Me.LblUAS.Size = New System.Drawing.Size(57, 25)
+        Me.LblUAS.TabIndex = 20
+        Me.LblUAS.Text = "UAS"
+        '
+        'LblUTS
+        '
+        Me.LblUTS.AutoSize = True
+        Me.LblUTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblUTS.Location = New System.Drawing.Point(353, 385)
+        Me.LblUTS.Name = "LblUTS"
+        Me.LblUTS.Size = New System.Drawing.Size(56, 25)
+        Me.LblUTS.TabIndex = 21
+        Me.LblUTS.Text = "UTS"
+        '
+        'TxtUAS
+        '
+        Me.TxtUAS.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUAS.Location = New System.Drawing.Point(655, 379)
+        Me.TxtUAS.Name = "TxtUAS"
+        Me.TxtUAS.Size = New System.Drawing.Size(118, 34)
+        Me.TxtUAS.TabIndex = 22
+        '
+        'TxtUTS
+        '
+        Me.TxtUTS.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUTS.Location = New System.Drawing.Point(432, 379)
+        Me.TxtUTS.Name = "TxtUTS"
+        Me.TxtUTS.Size = New System.Drawing.Size(118, 34)
+        Me.TxtUTS.TabIndex = 23
+        '
+        'TxtGRADE
+        '
+        Me.TxtGRADE.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtGRADE.Location = New System.Drawing.Point(812, 379)
+        Me.TxtGRADE.Name = "TxtGRADE"
+        Me.TxtGRADE.Size = New System.Drawing.Size(118, 34)
+        Me.TxtGRADE.TabIndex = 24
+        Me.TxtGRADE.Text = " -GRADE-" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(942, 505)
+        Me.Controls.Add(Me.TxtGRADE)
+        Me.Controls.Add(Me.TxtUTS)
+        Me.Controls.Add(Me.TxtUAS)
+        Me.Controls.Add(Me.LblUTS)
+        Me.Controls.Add(Me.LblUAS)
+        Me.Controls.Add(Me.LblTugas)
+        Me.Controls.Add(Me.TxtTugas)
+        Me.Controls.Add(Me.LblNilai)
         Me.Controls.Add(Me.Btnprocess)
         Me.Controls.Add(Me.CmmbBoxJurusan)
         Me.Controls.Add(Me.CmbBoxFakultas)
@@ -164,7 +253,6 @@ Partial Class Form4
         Me.Controls.Add(Me.TxtNIP)
         Me.Controls.Add(Me.LblNIP)
         Me.Name = "Form4"
-        Me.Text = "Form4"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -180,4 +268,12 @@ Partial Class Form4
     Friend WithEvents CmbBoxFakultas As System.Windows.Forms.ComboBox
     Friend WithEvents CmmbBoxJurusan As System.Windows.Forms.ComboBox
     Friend WithEvents Btnprocess As System.Windows.Forms.Button
+    Friend WithEvents LblNilai As System.Windows.Forms.Label
+    Friend WithEvents TxtTugas As System.Windows.Forms.TextBox
+    Friend WithEvents LblTugas As System.Windows.Forms.Label
+    Friend WithEvents LblUAS As System.Windows.Forms.Label
+    Friend WithEvents LblUTS As System.Windows.Forms.Label
+    Friend WithEvents TxtUAS As System.Windows.Forms.TextBox
+    Friend WithEvents TxtUTS As System.Windows.Forms.TextBox
+    Friend WithEvents TxtGRADE As System.Windows.Forms.TextBox
 End Class
